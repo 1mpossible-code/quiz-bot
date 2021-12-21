@@ -5,6 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+if not os.getenv('BOT_TOKEN'):
+    raise Exception('Please provide BOT_TOKEN value in .env file')
 API_TOKEN = os.getenv('BOT_TOKEN')
 
 # Configure logging
