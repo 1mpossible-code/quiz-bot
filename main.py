@@ -19,7 +19,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start', 'help'])
 async def send_welcome(message: types.Message):
-    await message.reply("Hi!\nI'm EchoBot!")
+    await message.reply("Hi!\nI'm Quiz Bot!")
 
 
 @dp.message_handler()
